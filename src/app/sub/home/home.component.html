@@ -127,15 +127,15 @@
                 <span class="contact__text">Kerala,India |  Doha,Qatar</span>
             </div>
 
-            <form action="" class="contact__form">
+            <form  id="submit-form"  role="form" action="" class="contact__form">
                 <div class="contact__inputs">
-                    <input type="text" placeholder="Enter you name" class="contact__input">
-                    <input type="mail" placeholder="Enter your email" class="contact__input">
+                    <input name="name" class="form-control contact__input" id="name"  data-rule="minlen:4" data-msg="Please enter at least 4 chars"  type="text" placeholder="Enter you name" />
+                    <input class="form-control contact__input" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" type="mail" placeholder="Enter your email" />
                 </div>
 
-                <textarea name="" id="" cols="0" rows="10" placeholder="Connect with Us..." class="contact__input"></textarea>
+                <textarea   class="form-control contact__input"  id="message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" name="" id="" cols="0" rows="10" placeholder="Connect with Us..."></textarea>
 
-                <input type="submit" value="Send" class="contact__button">
+                <input type="submit"  type="submit" value="Send" class="contact__button">
             </form>
         </div>
     </section>
